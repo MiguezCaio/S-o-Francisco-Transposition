@@ -1,0 +1,243 @@
+id_municipio,ano,produto,temp_quantidade_produzida,perm_quantidade_produzida
+2509701,2010,Goiaba,,64
+2509701,2017,Mandioca,8,
+2503704,2019,Tomate,150,
+2509701,2018,Feijão (em grão),225,
+2509701,2011,Manga,,40
+2503704,2017,Manga,,15
+2509701,2019,Mandioca,42,
+2509701,2010,Milho (em grão),150,
+2503704,2016,Coco-da-baía,,200
+2509701,2019,Laranja,,8
+2503704,2009,Cana-de-açúcar,200,
+2509701,2011,Tomate,400,
+2509701,2008,Mamona (baga),7,
+2503704,2010,Cana-de-açúcar,375,
+2503704,2012,Milho (em grão),0,
+2509701,2018,Tomate,2700,
+2503704,2011,Milho (em grão),900,
+2509701,2017,Milho (em grão),270,
+2509701,2010,Fava (em grão),5,
+2509701,2008,Banana (cacho),,120
+2503704,2009,Coco-da-baía,,510
+2509701,2019,Goiaba,,28
+2509701,2019,Tomate,2400,
+2503704,2008,Tomate,150,
+2503704,2014,Goiaba,,40
+2503704,2019,Coco-da-baía,,140
+2503704,2009,Goiaba,,225
+2503704,2014,Manga,,30
+2509701,2017,Laranja,,6
+2509701,2009,Batata-doce,200,
+2509701,2014,Feijão (em grão),24,
+2509701,2013,Banana (cacho),,128
+2509701,2013,Coco-da-baía,,240
+2509701,2013,Manga,,40
+2509701,2019,Melancia,60,
+2509701,2016,Tomate,1050,
+2503704,2009,Tomate,100,
+2503704,2010,Banana (cacho),,500
+2509701,2018,Castanha de caju,,1
+2503704,2011,Coco-da-baía,,510
+2509701,2012,Sisal ou agave (fibra),,55
+2509701,2018,Milho (em grão),525,
+2509701,2009,Feijão (em grão),500,
+2503704,2008,Arroz (em casca),28,
+2509701,2017,Maracujá,,60
+2509701,2015,Goiaba,,22
+2503704,2015,Feijão (em grão),6,
+2503704,2008,Goiaba,,225
+2509701,2014,Banana (cacho),,55
+2503704,2013,Milho (em grão),25,
+2503704,2013,Manga,,9
+2509701,2018,Goiaba,,27
+2509701,2018,Mamão,,100
+2509701,2016,Coco-da-baía,,100
+2509701,2017,Limão,,20
+2503704,2016,Arroz (em casca),2,
+2503704,2011,Tomate,75,
+2503704,2010,Goiaba,,200
+2509701,2016,Banana (cacho),,70
+2509701,2010,Tomate,800,
+2503704,2014,Milho (em grão),34,
+2509701,2008,Manga,,40
+2509701,2009,Sisal ou agave (fibra),,320
+2509701,2011,Fava (em grão),5,
+2509701,2014,Manga,,30
+2509701,2018,Manga,,49
+2509701,2019,Maracujá,,72
+2509701,2008,Mandioca,240,
+2503704,2016,Manga,,30
+2503704,2019,Manga,,12
+2509701,2019,Coco-da-baía,,150
+2509701,2015,Manga,,35
+2503704,2010,Feijão (em grão),8,
+2509701,2014,Fava (em grão),2,
+2503704,2015,Tomate,120,
+2509701,2017,Banana (cacho),,112
+2503704,2009,Manga,,21
+2509701,2010,Manga,,40
+2503704,2011,Banana (cacho),,500
+2503704,2013,Arroz (em casca),9,
+2509701,2013,Batata-doce,80,
+2503704,2009,Feijão (em grão),189,
+2503704,2018,Coco-da-baía,,96
+2503704,2011,Manga,,21
+2509701,2019,Castanha de caju,,1
+2503704,2018,Cana-de-açúcar,200,
+2509701,2015,Banana (cacho),,70
+2503704,2014,Cana-de-açúcar,200,
+2503704,2008,Banana (cacho),,500
+2503704,2018,Manga,,12
+2509701,2018,Maracujá,,45
+2503704,2015,Goiaba,,58
+2503704,2011,Cana-de-açúcar,300,
+2509701,2014,Milho (em grão),16,
+2509701,2010,Coco-da-baía,,100
+2509701,2011,Goiaba,,20
+2509701,2019,Banana (cacho),,140
+2503704,2019,Arroz (em casca),6,
+2509701,2011,Banana (cacho),,128
+2503704,2016,Cana-de-açúcar,200,
+2503704,2016,Feijão (em grão),39,
+2509701,2009,Tomate,800,
+2509701,2008,Batata-doce,200,
+2509701,2014,Batata-doce,105,
+2509701,2015,Tomate,120,
+2509701,2019,Manga,,49
+2509701,2017,Feijão (em grão),206,
+2509701,2013,Sisal ou agave (fibra),,56
+2503704,2011,Goiaba,,225
+2503704,2017,Banana (cacho),,52
+2503704,2012,Feijão (em grão),0,
+2503704,2016,Milho (em grão),270,
+2503704,2018,Tomate,90,
+2509701,2010,Batata-doce,200,
+2509701,2010,Feijão (em grão),100,
+2509701,2015,Batata-doce,105,
+2509701,2011,Sisal ou agave (fibra),,140
+2503704,2012,Manga,,12
+2509701,2012,Manga,,40
+2503704,2018,Arroz (em casca),24,
+2509701,2016,Mandioca,12,
+2509701,2008,Fava (em grão),20,
+2503704,2014,Banana (cacho),,120
+2503704,2017,Coco-da-baía,,56
+2503704,2012,Arroz (em casca),0,
+2509701,2018,Mandioca,21,
+2509701,2008,Sisal ou agave (fibra),,125
+2509701,2009,Goiaba,,72
+2503704,2013,Coco-da-baía,,170
+2503704,2014,Coco-da-baía,,238
+2503704,2008,Manga,,21
+2509701,2018,Sisal ou agave (fibra),,42
+2509701,2012,Coco-da-baía,,120
+2503704,2015,Coco-da-baía,,118
+2503704,2018,Milho (em grão),547,
+2509701,2018,Algodão herbáceo (em caroço),1,
+2503704,2008,Milho (em grão),560,
+2503704,2010,Tomate,150,
+2503704,2008,Coco-da-baía,,510
+2509701,2009,Fava (em grão),12,
+2509701,2008,Tomate,800,
+2509701,2009,Banana (cacho),,120
+2503704,2015,Manga,,35
+2503704,2017,Tomate,120,
+2509701,2011,Mandioca,200,
+2509701,2011,Milho (em grão),420,
+2503704,2008,Feijão (em grão),270,
+2503704,2014,Feijão (em grão),75,
+2509701,2010,Sisal ou agave (fibra),,320
+2509701,2017,Coco-da-baía,,100
+2509701,2010,Mandioca,360,
+2503704,2012,Goiaba,,125
+2509701,2017,Mamão,,150
+2503704,2012,Cana-de-açúcar,200,
+2509701,2019,Batata-doce,35,
+2509701,2009,Algodão herbáceo (em caroço),8,
+2509701,2008,Milho (em grão),1600,
+2503704,2012,Banana (cacho),,240
+2503704,2012,Tomate,0,
+2509701,2019,Fava (em grão),1,
+2509701,2018,Melancia,60,
+2503704,2016,Goiaba,,66
+2509701,2013,Tomate,150,
+2509701,2014,Sisal ou agave (fibra),,60
+2509701,2012,Feijão (em grão),5,
+2509701,2019,Milho (em grão),50,
+2509701,2009,Mamona (baga),10,
+2509701,2015,Milho (em grão),8,
+2509701,2016,Sisal ou agave (fibra),,56
+2509701,2019,Mamão,,200
+2509701,2019,Sisal ou agave (fibra),,20
+2509701,2017,Goiaba,,22
+2503704,2019,Cana-de-açúcar,200,
+2509701,2009,Coco-da-baía,,120
+2509701,2012,Banana (cacho),,128
+2503704,2019,Goiaba,,65
+2503704,2017,Milho (em grão),88,
+2509701,2011,Batata-doce,200,
+2509701,2008,Feijão (em grão),800,
+2503704,2014,Arroz (em casca),14,
+2509701,2017,Manga,,35
+2509701,2008,Coco-da-baía,,120
+2509701,2011,Maracujá,,12
+2509701,2017,Sisal ou agave (fibra),,35
+2509701,2009,Mandioca,360,
+2503704,2018,Banana (cacho),,96
+2509701,2018,Coco-da-baía,,150
+2509701,2018,Laranja,,10
+2509701,2016,Milho (em grão),30,
+2509701,2016,Batata-doce,40,
+2509701,2018,Batata-doce,35,
+2509701,2011,Algodão herbáceo (em caroço),7,
+2509701,2017,Castanha de caju,,1
+2509701,2012,Tomate,270,
+2503704,2013,Feijão (em grão),70,
+2509701,2019,Feijão (em grão),60,
+2503704,2011,Feijão (em grão),560,
+2503704,2008,Cana-de-açúcar,200,
+2509701,2014,Coco-da-baía,,50
+2509701,2019,Limão,,18
+2503704,2012,Algodão herbáceo (em caroço),0,
+2503704,2010,Coco-da-baía,,510
+2503704,2019,Banana (cacho),,120
+2503704,2017,Batata-doce,25,
+2509701,2018,Limão,,30
+2509701,2016,Goiaba,,24
+2509701,2016,Manga,,30
+2509701,2012,Goiaba,,21
+2503704,2017,Cana-de-açúcar,200,
+2509701,2014,Tomate,120,
+2503704,2017,Feijão (em grão),50,
+2509701,2009,Milho (em grão),800,
+2503704,2011,Arroz (em casca),153,
+2503704,2018,Goiaba,,40
+2509701,2015,Coco-da-baía,,100
+2503704,2019,Milho (em grão),96,
+2503704,2009,Banana (cacho),,500
+2503704,2019,Feijão (em grão),44,
+2509701,2013,Goiaba,,21
+2509701,2016,Feijão (em grão),17,
+2503704,2009,Milho (em grão),520,
+2509701,2008,Algodão herbáceo (em caroço),8,
+2503704,2013,Banana (cacho),,105
+2509701,2014,Goiaba,,22
+2509701,2012,Milho (em grão),0,
+2503704,2009,Arroz (em casca),29,
+2509701,2011,Feijão (em grão),300,
+2503704,2008,Algodão herbáceo (em caroço),10,
+2509701,2009,Manga,,40
+2509701,2011,Coco-da-baía,,120
+2509701,2015,Sisal ou agave (fibra),,56
+2509701,2017,Tomate,1500,
+2503704,2018,Feijão (em grão),229,
+2509701,2008,Goiaba,,72
+2509701,2010,Banana (cacho),,120
+2509701,2018,Banana (cacho),,140
+2509701,2016,Mamão,,225
+2509701,2018,Fava (em grão),1,
+2503704,2013,Goiaba,,56
+2509701,2016,Melancia,30,
+2503704,2015,Cana-de-açúcar,200,
+2509701,2015,Feijão (em grão),8,

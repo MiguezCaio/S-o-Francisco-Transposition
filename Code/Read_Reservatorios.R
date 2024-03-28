@@ -66,7 +66,7 @@ limpar_texto <- function(coluna) {
 dados_completos$Municipio <-limpar_texto(dados_completos$Municipio)
 ##Agora vamos pegar todas as inaugurações
 library(readxl)
-Inaugurações <- read_excel("Inaugurações.xlsx")
+Inaugurações <- read_excel("~/GitHub/S-o-Francisco-Transposition/Data_Upload/Inaugurações.xlsx")
 
 Inaugurações$Municipio <-limpar_texto(Inaugurações$Municipio)
 
@@ -82,7 +82,7 @@ data<-dados_completos %>%
   inner_join(as.data.frame(br_data),by="Municipio")
 
 library(readr)
-chuva_v1 <- read_csv("Data/chuva_v1.csv")
+chuva_v1 <- read_csv("~/GitHub/S-o-Francisco-Transposition/Data_Upload/chuva_v1.csv")
 print(chuva_v1)
 dados_municipio<-chuva_v1
 dados_municipio$nome_mes <- month.name[dados_municipio$mes]
@@ -93,7 +93,7 @@ ggplot(dados_municipio, aes(x = data, y = precipitacao_total, color = factor(ano
   theme_minimal() +
   ggtitle("Precipitação Diária ao Longo dos Anos")
 
-ar2 <- read_csv("Data/PB-20240325T153047Z-001/PB/ar2.csv") %>%
+ar2 <- read_csv("~/GitHub/S-o-Francisco-Transposition/Data_Upload/PB-20240325T153047Z-001/PB/ar2.csv") %>%
   pivot_longer(cols = -c("Setor de emissão", "Categoria emissora", "Sub-categoria emissora",
                          "Produto ou sistema", "Detalhamento", "Recorte",
                          "Atividade geral", "Bioma", "Emissão/Remoção/Bunker", "Gás", "Cidade"),
@@ -127,7 +127,7 @@ ggplot(co2_monteiro, aes(x = ano, y = total, color = `Atividade geral`)) +
        color = "Category") +
   theme_minimal()
 
-producao_agricola <- read_csv("Data/producao_agricola.csv") %>%
+producao_agricola <- read_csv("~/GitHub/S-o-Francisco-Transposition/Data_Upload/producao_agricola.csv") %>%
   mutate(temp_quantidade_produzida = replace_na(temp_quantidade_produzida, 0),
          perm_quantidade_produzida = replace_na(perm_quantidade_produzida, 0)) %>%
   mutate(total_qualidade_produzida = temp_quantidade_produzida + perm_quantidade_produzida)
@@ -147,7 +147,7 @@ ggplot(plot_producao_agricola, aes(x = ano, y = total_qualidade_produzida, color
        color = "Product") +
   theme_minimal()
 
-transicao <- read_csv("Data/transicao.csv") %>%
+transicao <- read_csv("~/GitHub/S-o-Francisco-Transposition/Data_Upload/transicao.csv") %>%
   group_by(ano,id_municipio) %>%
   mutate(pct_area=area/sum(area)) %>%
   mutate(transicao=paste(valor_en,"->",valor_en_1))
@@ -174,18 +174,8 @@ stacked_bar_plot <- ggplot(df, aes(x = ano, y = pct_area, fill = valor_en_1)) +
 # Visualizar o gráfico
 print(stacked_bar_plot)
 
-ggplot(transicao_plot, aes(x = ano, y = pct_area, color = transicao)) +
-  geom_line() +
-  geom_point() +
-  geom_vline(xintercept = data_vertical, linetype = "dashed", color = "red") +
-  labs(title = "Quantity produced by Year",
-       x = "Year",
-       y = "Total Quantity",
-       color = "Product") +
-  theme_minimal()
 
-
-SIM <- read_csv("Data/SIM.csv") %>%
+SIM <- read_csv("~/GitHub/S-o-Francisco-Transposition/Data_Upload/SIM.csv") %>%
   group_by(ano, id_municipio) %>%
   summarize(n=sum(numero_obitos))
 SIM$ano<-as.Date(paste0(SIM$ano, "-01-01"))

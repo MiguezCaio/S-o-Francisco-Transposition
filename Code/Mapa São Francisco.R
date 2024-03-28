@@ -2,9 +2,9 @@ library(tidyverse)
 library(geobr)
 library(sf)
 library(leaflet)
-bacia_sf <- st_read(dsn = "D:/Projetos/São francisco v2/Data/GEOFT_BHO_HIDRONIMO")
+bacia_sf <- st_read(dsn = "~/GitHub/S-o-Francisco-Transposition/Data_Upload/GEOFT_BHO_HIDRONIMO")
 library(readr)
-estacoes <- read_csv("Data/estacoes.csv") %>%
+estacoes <- read_csv("~/GitHub/S-o-Francisco-Transposition/Data_Upload/estacoes.csv") %>%
   rename(code_muni=id_municipio)
 
 br_data <- geobr::read_municipality() %>%
@@ -22,7 +22,7 @@ bacia_sf_simplified <- st_simplify(bacia_sf, preserveTopology = TRUE, dTolerance
 
 # Define o limite de distância em quilômetros
 library(readxl)
-Inaugurações <- read_xlsx("Proposal Caio/Inaugurações.xlsx")
+Inaugurações <- read_xlsx("~/GitHub/S-o-Francisco-Transposition/Data_Upload/Inaugurações.xlsx")
 
 Inaugurações$Municipio <-limpar_texto(Inaugurações$Municipio)
 
@@ -53,5 +53,5 @@ mapa
 
 
 library(htmlwidgets)
-mapa_html <- saveWidget(mapa, file = "D:/Projetos/São francisco v2/Data/mapa_interativo.html", selfcontained = TRUE)
+mapa_html <- saveWidget(mapa, file = "~/GitHub/S-o-Francisco-Transposition/Results/mapa_interativo.html", selfcontained = TRUE)
 

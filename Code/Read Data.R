@@ -1,14 +1,11 @@
 library(tidyverse)
 library(geobr)
 library(sf)
-me <- st_read(dsn = "D:/Projetos/Transposição São Francisco/Data/GEOFT_BHO_TRECHO_DRENAGEM")
-??qtm
-tmap::qtm(me)
 
 library(brclimr)
 library(stringr)
 
-Reservatorios<-st_read(dsn = "D:/Projetos/Transposição São Francisco/Data/Reservatórios do Nordeste.kml")
+Reservatorios<-st_read(dsn = "~/GitHub/S-o-Francisco-Transposition/Data_Upload/Reservatórios do Nordeste.kml")
 campo_html<-Reservatorios$Description[1]
 # Parse do HTML
 doc <- read_html(campo_html)
