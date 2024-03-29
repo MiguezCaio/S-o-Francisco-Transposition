@@ -4,6 +4,8 @@ library(dplyr)
 library(tidyr)
 library(stringr)
 library(curl)
+library(ggplot2)
+library(tidyverse)
 
 # Ler a base de dados de reservatórios
 Reservatorios <- st_read(dsn = "D:/Projetos/São francisco v2/Data/Reservatórios do Nordeste.kml")
@@ -152,8 +154,6 @@ transicao <- read_csv("~/GitHub/S-o-Francisco-Transposition/Data_Upload/transica
   mutate(pct_area=area/sum(area)) %>%
   mutate(transicao=paste(valor_en,"->",valor_en_1))
 
-#remotes::install_github("davidsjoberg/ggsankey")
-library(ggsankey)
 
 df <- transicao %>%
   filter(ano>=2010) %>%
