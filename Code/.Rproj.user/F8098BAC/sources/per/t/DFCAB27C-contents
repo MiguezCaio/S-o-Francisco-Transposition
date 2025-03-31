@@ -1,0 +1,96 @@
+---
+title: "Map"
+author: "Caio Miguez"
+date: "`r Sys.Date()`"
+output: html_document
+---
+# Welcome to my map of the São Francisco River!
+This is juste a prototype in order to see what data are we able to extract.
+
+## The map
+In the map below, we have:
+* Red Dots are meteorological Stations
+* Blue lines are the rivers that are part of the São Francisco Basin
+* Green dots are reservoirs of water
+* Purple shapes are municipalities that are part of the Transposition project
+```{r  include=FALSE}
+source("Read_Reservatorios.R")
+```
+
+
+```{r warning=FALSE,results='hide'}
+library(tidyverse)
+library(geobr)
+library(sf)
+library(leaflet)
+limpar_texto <- function(coluna) {
+  # Remover espaços em branco extras, converter para maiúsculo e cortar se necessário
+  coluna <- toupper(str_trim(coluna))
+  coluna <- str_sub(coluna, end = -1) # Se precisar cortar algo específico no final
+  
+  # Função para remover acentos e pontuações
+  remover_acentos_pontuacoes <- function(texto) {
+    texto <- iconv(texto, to = "ASCII//TRANSLIT")
+    texto <- str_replace_all(texto, "[[:punct:]]", "")
+    return(texto)
+  }
+  
+  # Remover acentos e pontuações
+  coluna <- remover_acentos_pontuacoes(coluna)
+  
+  return(coluna)
+}
+bacia_sf <- st_read(dsn = "~/GitHub/S-o-Francisco-Transposition/Data_Upload/GEOFT_BHO_HIDRONIMO")
+library(readr)
+estacoes <- read_csv("~/GitHub/S-o-Francisco-Transposition/Data_Upload/estacoes.csv") %>%
+  rename(code_muni=id_municipio)
+
+br_data <- geobr::read_municipality() %>%
+  mutate(name_muni=limpar_texto(name_muni)) %>%
+  rename(Municipio=name_muni) %>%
+  select(-geom)
+
+estacoes <-estacoes %>%
+  inner_join(as.data.frame((br_data), by="code_muni")) %>%
+  filter(abbrev_state %in% c("CE", "PE", "PB", "RN"))
+reservatorios <- dados_completos %>%
+  st_as_sf(wkt = "geometry")
+estacoes_meteorologicas_sf <- st_as_sf(estacoes, coords = c("longitude", "latitude"), crs = 4326)
+bacia_sf_simplified <- st_simplify(bacia_sf, preserveTopology = TRUE, dTolerance = 0.1)
+
+# Define o limite de distância em quilômetros
+library(readxl)
+Inaugurações <- read_xlsx("~/GitHub/S-o-Francisco-Transposition/Data_Upload/Inaugurações.xlsx")
+
+Inaugurações$Municipio <-limpar_texto(Inaugurações$Municipio)
+
+Inaugurações<- Inaugurações %>%
+  inner_join(br_data, by="code_muni")
+
+Inaugurações_sf <- st_as_sf(Inaugurações)
+Inaugurações$geom[1]
+mapa <- leaflet() %>%
+  addTiles()
+
+mapa <- mapa %>% 
+  addPolygons(data = bacia_sf_simplified, color = "blue", fillOpacity = 0.2, weight = 2)
+
+# Adicionar as estações meteorológicas ao mapa
+mapa <- mapa %>% 
+  addCircleMarkers(data = estacoes_meteorologicas_sf, popup = ~estacao, color = "red", radius = 5)
+
+# Adicionar os reservatórios ao mapa
+mapa <- mapa %>% 
+  addCircleMarkers(data = reservatorios, color = "green", radius = 2)
+
+mapa <- mapa %>% 
+  addPolygons(data = Inaugurações_sf, color = "purple", fillOpacity = 0.2, weight = 2)
+
+```
+
+```{r}
+
+# Exibir o mapa
+mapa
+```
+
